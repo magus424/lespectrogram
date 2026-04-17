@@ -1,4 +1,6 @@
 let spectrogram = null;
+let scaleType = "MEL";
+
 
 async function init() {
     const audioCtx = new AudioContext();
@@ -17,6 +19,8 @@ async function init() {
 
         function draw() {
             analyser.getByteFrequencyData(frqBuf,0);
+            
+
 
             requestAnimationFrame(draw)
         }

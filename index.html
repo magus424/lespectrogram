@@ -16,12 +16,12 @@
 	<div class="bg-dark text-center container">
 		<button id="start" class="btn btn-success">Start</button>
 		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="scaleDropdownBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Scale Options</button>
-			<div class="dropdown-menu" aria-labelledby="scaleDropdownBtn">
-				<a class="dropdown-item" href="#">Mel (Default)</a>
-				<a class="dropdown-item" href="#">Linear</a>
-				<a class="dropdown-item" href="#">Octave</a>
-				<a class="dropdown-item" href="#">Log</a>
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="scaleDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false">Scale Options</button>
+			<div id="scaleDropdown" class="dropdown-menu" aria-labelledby="scaleDropdownBtn">
+				<a class="dropdown-item" href="#" onclick="scaleType='MEL'">Mel (Default)</a>
+				<a class="dropdown-item" href="#" onclick="scaleType='LINEAR'">Linear</a>
+				<a class="dropdown-item" href="#" onclick="scaleType='OCTAVE'">Octave</a>
+				<a class="dropdown-item" href="#" onclick="scaleType='LOG'">Log</a>
 			</div>
 		</div>
 
